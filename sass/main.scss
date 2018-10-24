@@ -1,0 +1,43 @@
+// Font import
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+// Colors
+$color-yellow:#ffc914;
+$color-grey:#b5c2b7;
+$color-black:rgb(46, 40, 42);
+$color-blue:#00a7e1;
+$color-cream:#eddea4;
+$color-white:rgb(245, 243, 245);
+
+// Reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body
+body{
+  font-family: 'PT Sans', sans-serif;
+  background: $color-white;
+  color: $color-black;
+}
+
+// pre loader
+.preloader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: $color-white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  &__img {
+
+  }
+}

@@ -8,6 +8,9 @@ $color-black: rgb(46, 40, 42);
 $color-blue: #00a7e1;
 $color-cream: #eddea4;
 $color-white: rgb(245, 243, 245);
+$color-facebook: #3b5998;
+$color-twitter: #1dcaff;
+$color-instagram: #cd486b;
 
 // Reset
 * {
@@ -172,4 +175,35 @@ body {
   width: 11rem;
 }
 
+// social-icons
+.social-icons {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
 
+.social-icon {
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all .5s ease-out;
+
+  &__facebook {
+    color: $color-facebook;
+  }
+  &__twitter {
+    color: $color-twitter;
+  }
+  &__instagram {
+    color: $color-instagram;
+  }
+
+  &:hover {
+    color: $color-yellow;
+    transform: scale(1.5);
+  }
+}

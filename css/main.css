@@ -115,3 +115,27 @@ body {
 
 .nav--show {
   width: 11rem; }
+
+.social-icons {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  width: 50%; }
+
+.social-icon {
+  text-decoration: none;
+  font-size: 2rem;
+  transition: all .5s ease-out; }
+  .social-icon__facebook {
+    color: #3b5998; }
+  .social-icon__twitter {
+    color: #1dcaff; }
+  .social-icon__instagram {
+    color: #cd486b; }
+  .social-icon:hover {
+    color: #ffc914;
+    transform: scale(1.5); }

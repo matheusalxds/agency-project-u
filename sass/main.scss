@@ -106,3 +106,69 @@ body {
     z-index: 2;
   }
 }
+
+// nav
+.navBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  font-size: 3rem;
+  color: $color-yellow;
+  z-index: 3;
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 201, 20, .5);
+  z-index: 4;
+  width: 0;
+  overflow: hidden;
+  transition:  all .4s linear;
+
+  &__links {
+    list-style: none;
+  }
+
+  &__single-link {
+    display: block;
+    text-decoration: none;
+    color: $color-black;
+    font-size: 1.5rem;
+    padding: .5rem;
+    transition: all .4s linear;
+
+    &:hover {
+      background-color: $color-black;
+      color: $color-yellow;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.nav--show {
+  width: 11rem;
+}
+
+

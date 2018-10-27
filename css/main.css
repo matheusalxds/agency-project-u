@@ -67,3 +67,50 @@ body {
   height: 100%;
   background: rgba(245, 243, 245, 0.3);
   z-index: 2; }
+
+.navBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  font-size: 3rem;
+  color: #ffc914;
+  z-index: 3;
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(1); } }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(255, 201, 20, 0.5);
+  z-index: 4;
+  width: 0;
+  overflow: hidden;
+  transition: all .4s linear; }
+  .nav__links {
+    list-style: none; }
+  .nav__single-link {
+    display: block;
+    text-decoration: none;
+    color: #2e282a;
+    font-size: 1.5rem;
+    padding: .5rem;
+    transition: all .4s linear; }
+    .nav__single-link:hover {
+      background-color: #2e282a;
+      color: #ffc914;
+      padding-left: 1.5rem; }
+
+.nav--show {
+  width: 11rem; }

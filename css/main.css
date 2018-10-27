@@ -106,7 +106,8 @@ body {
     color: #2e282a;
     font-size: 1.5rem;
     padding: .5rem;
-    transition: all .4s linear; }
+    transition: all .4s linear;
+    text-transform: capitalize; }
     .nav__single-link:hover {
       background-color: #2e282a;
       color: #ffc914;
